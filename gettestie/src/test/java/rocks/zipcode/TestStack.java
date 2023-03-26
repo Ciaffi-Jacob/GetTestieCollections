@@ -120,4 +120,14 @@ public class TestStack {
         Integer expected = 1;
         Assert.assertEquals(expected, priorityQueue.peek());
     }
+    @Test
+    public void testComparable(){
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("a");
+        arrayList.add("b");
+        arrayList.add("c");
+        Integer expected = -1;
+        Integer actual = arrayList.get(0).compareTo(arrayList.get(1));
+        Assert.assertEquals(expected, actual);
+    }
 }
