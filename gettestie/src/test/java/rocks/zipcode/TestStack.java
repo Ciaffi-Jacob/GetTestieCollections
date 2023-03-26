@@ -75,5 +75,13 @@ public class TestStack {
         que.pop();
         Assert.assertEquals(expected, que.getFirst());
     }
+    @Test
+    public void testVector(){
+        Vector<Integer> vector = new Vector<>();
+        vector.add(1);
+        boolean expected = false;
+        Assert.assertEquals(expected, vector.isEmpty());
+    }
+    @Test
     
 }
