@@ -89,4 +89,11 @@ public class TestStack {
         boolean expected = false;
         Assert.assertEquals(expected, seed.isEmpty());
     }
+    @Test
+    public void testStack(){
+        Stack<Integer> intStack = new Stack<>();
+        intStack.push(1);
+        intStack.push(2);
+        Integer expected = 2;
+    }
 }
