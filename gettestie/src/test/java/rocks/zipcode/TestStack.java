@@ -5,10 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Stack;
+import java.util.*;
 
 public class TestStack {
 
@@ -59,7 +56,14 @@ public class TestStack {
     }
 
   //  For the Queue interface, LinkedList is the most commonly used implementation.
-
+    @Test
+    public void testLinkedList(){
+        LinkedList link = new LinkedList();
+        link.add(1);
+        link.add(2);
+        Integer expected = 2;
+        Assert.assertEquals(expected, link.getLast());
+    }
 
  //   For the Deque interface, ArrayDeque is the most commonly used implementation.
 
