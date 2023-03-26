@@ -96,4 +96,11 @@ public class TestStack {
         intStack.push(2);
         Integer expected = 2;
     }
+    @Test
+    public void testTreeSet(){
+        TreeSet<String> treeSet = new TreeSet<>();
+        treeSet.add("bubba");
+        boolean expected = false;
+        Assert.assertEquals(expected, treeSet.isEmpty());
+    }
 }
