@@ -58,7 +58,7 @@ public class TestStack {
   //  For the Queue interface, LinkedList is the most commonly used implementation.
     @Test
     public void testLinkedList(){
-        LinkedList link = new LinkedList();
+        LinkedList<Integer> link = new LinkedList<>();
         link.add(1);
         link.add(2);
         Integer expected = 2;
@@ -66,6 +66,14 @@ public class TestStack {
     }
 
  //   For the Deque interface, ArrayDeque is the most commonly used implementation.
-
-
+    @Test
+    public void testArrayDeque(){
+        ArrayDeque<String> que = new ArrayDeque<>();
+        que.add("ayy");
+        que.add("lmao");
+        String expected = "lmao";
+        que.pop();
+        Assert.assertEquals(expected, que.getFirst());
+    }
+    
 }
