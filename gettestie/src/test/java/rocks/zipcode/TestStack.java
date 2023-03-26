@@ -111,4 +111,13 @@ public class TestStack {
         boolean expected = true;
         Assert.assertEquals(expected, arrayList.iterator().hasNext());
     }
+    @Test
+    public void testPriorityQueue(){
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+        priorityQueue.add(3);
+        priorityQueue.add(1);
+        priorityQueue.add(2);
+        Integer expected = 1;
+        Assert.assertEquals(expected, priorityQueue.peek());
+    }
 }
