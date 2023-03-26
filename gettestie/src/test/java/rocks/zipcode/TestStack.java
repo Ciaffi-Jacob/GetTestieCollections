@@ -103,4 +103,12 @@ public class TestStack {
         boolean expected = false;
         Assert.assertEquals(expected, treeSet.isEmpty());
     }
+    @Test
+    public void testIterator(){
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.add(1);
+        arrayList.add(2);
+        boolean expected = true;
+        Assert.assertEquals(expected, arrayList.iterator().hasNext());
+    }
 }
