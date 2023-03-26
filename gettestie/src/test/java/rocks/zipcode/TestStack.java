@@ -83,5 +83,10 @@ public class TestStack {
         Assert.assertEquals(expected, vector.isEmpty());
     }
     @Test
-    
+    public void testTreeMap(){
+        TreeMap<String, Integer> seed = new TreeMap<>();
+        seed.put("Maple", 1);
+        boolean expected = false;
+        Assert.assertEquals(expected, seed.isEmpty());
+    }
 }
